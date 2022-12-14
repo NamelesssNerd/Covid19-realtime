@@ -1,0 +1,48 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0D1117;
+}
+
+.container {
+    position: absolute;
+    background-color: aqua;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+
+    .left {
+        position: fixed;
+        height: 100vh;
+        width: 30%;
+        background-color: red;
+    }
+
+    .right {
+        position: relative;
+        left: 30%;
+        height: 200vh;
+        width: 70%;
+        background-color: pink;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: 100%;
+        display: block;
+
+        .left {
+            display: none;
+        }
+        .right{
+            margin-left: -30%;
+            width: 100%;
+        }
+    }
+}
