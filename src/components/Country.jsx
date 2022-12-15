@@ -3,28 +3,13 @@ import axios from 'axios';
 import './country.scss';
 import Countries from './Countries';
 import Topic from './Topic';
-
-
 const Country = () => {
     const [Country, setCountries] = useState([]);
     const [world, setworld] = useState([]);
     async function Hamrofunction() {
         const Data = await axios.get('https://api.covid19api.com/summary');
-        // console.log(Data);
-        // console.log(Data.data.Countries[0])
         setCountries(Data.data.Countries);
         setworld(Data.data.Global);
-        // const { Global } = Data.data;
-        // console.log(Object.keys(Countries).length);
-        // console.log(Countries[0].Country);
-        /*
-        NewConfirmed
-        NewDeaths
-NewRecovered
-TotalConfirmed
-TotalDeaths
-TotalRecovered
-        */
     }
     useEffect(() => {
         Hamrofunction();
