@@ -1,0 +1,18 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+header {
+    border-radius: 4px;
+    top: 0;
+    background-color: aliceblue;
+    position: fixed;
+    height: 6rem;
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Hanalei Fill', cursive;
+}
