@@ -1,4 +1,4 @@
-# Covid19 realtime Data
+# Covid19 realtime Data using react js
 
 ## Demo Link : https://earnest-marshmallow-57b8f8.netlify.app/
 
